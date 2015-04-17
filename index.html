@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <meta charset='utf-8'>
+  <title>#WT&Phi; | Philosophy for the digital age</title>
+  <style>
+    body {
+      margin: 0;
+      -webkit-transition: background 5s;
+      -moz-transition: background 5s;
+      -o-transition: background 5s;
+      transition: background 5s;
+    }
+    h1 {
+      margin: 0;
+      padding-top: 0.45em;
+      text-align: center;
+      color: #fff;
+      max-height: 100vh;
+      font-family: sans-serif;
+      font-size: 30vw;
+      line-height: 1;
+      -webkit-transition: background 3s;
+      -moz-transition: background 3s;
+      -o-transition: background 3s;
+      transition: background 3s;
+      transition-timing-function: ease-out;
+    }
+  </style>
+</head>
+<body>
+  <h1>#WTØ</h1>
+  <script type="text/javascript">
+
+    pastelize = function() {
+      var r = (Math.round(Math.random()* 127) + 127).toString(16);
+      var g = (Math.round(Math.random()* 127) + 127).toString(16);
+      var b = (Math.round(Math.random()* 127) + 127).toString(16);
+      console.log('#' + r + g + b);
+      return '#' + r + g + b;
+    };
+
+    setInterval(function() {
+      document.body.style.background = pastelize();
+    }, 3000);
+
+  </script>
+</body>
